@@ -1,0 +1,375 @@
+/**************  MAP SIZE  ******************/
+
+#map, #map2, #map3, #map4, #map5 {
+    height    : 720px; /*50vh;*/
+    width     : 100%;
+    margin    : 0;
+    padding: 0 2px 0 2px;
+    float: left;
+	border-radius: 15px;
+}
+
+/**************  MAP DIV  ******************/
+#sa-map1-div, #sa-map2-div, #sa-map3-div, #sa-map4-div, #sa-map5-div{
+    margin: 0;
+    padding: 0 2px 0 2px;
+}
+
+#sa-map5-div{
+    width: 25%;
+}
+
+/**************  TABLE WITH DEMAND AND OTHER LAYERS  ******************/
+
+.demand{
+	background-color: #1997c6;
+	padding: 5px;
+}
+
+.info1{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input-numer-table{
+    width: 50px;
+    height: 35px;
+    float: right;
+}
+
+.box-title-table{
+    background-color:  #6d7993;
+    color: #FFF;
+    display: inline-block;
+    width: 180px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    margin:0;
+    position: relative;
+}
+
+/**************  ???  ******************/
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: #fff;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 #fff,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 #fff,
+      .5em 0 0 #fff;}
+}
+
+/**************  LEAFLET DIVS FOR CITY NAME FLAGS  ******************/
+
+.leaflet-div-icon {
+    pointer-events: none !IMPORTANT;
+  }
+  
+.leaflet-div-icon {
+    background-color: transparent;
+    text-align: center;
+    /* border: 1px solid #ffc107; */
+    border: none;
+    margin-left: -3px !important;
+    margin-top: -36px !important;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: rgba(255,255,255,0.15) !important;
+    color: #333;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.4);
+}
+
+.leaflet-popup-content{
+    margin: 5px;
+}
+
+.custom-popup .leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.1);
+}
+
+.custom-popup .leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/**************  FLAGS WITH CITY NAMES  ******************/
+
+.value-cityalt-right, .value-city-map2-right, .value-city-map3-right, .value-city-map4-right, .value-city-map5-right{
+    width: 41%;
+    height: 43%;
+    text-align: center;
+    font-weight: 600;
+    background: #9f86ff;
+    position: absolute;
+    top: 61%;
+	left:59%;
+    color:#FFF;
+	pointer-events:auto;
+}
+
+.value-cityalt-left, .value-city-map2-left, .value-city-map3-left, .value-city-map4-left, .value-city-map5-left{
+    width: 41%;
+    height: 43%;
+    text-align: center;
+    font-weight: 600;
+    background: #9f86ff;
+    position: absolute;
+    top: 61%;
+    color:#FFF;
+	pointer-events:auto;
+}
+
+.value-city-right{
+    width: 41%;
+    height: 43%;
+    text-align: center;
+    font-weight: 600;
+	border: 1px solid #ffff00;
+    background: #000;
+    position: absolute;
+    top: 61%;
+	left:59%;
+    color:#FFF;
+	pointer-events:auto;
+}
+
+.value-city-left{
+    width: 41%;
+    height: 43%;
+    text-align: center;
+    font-weight: 600;
+	border: 1px solid #ffff00;
+    background: #000;
+    position: absolute;
+    top: 61%;
+    color:#FFF;
+	pointer-events:auto;
+}
+
+.no-city-right{
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: -25%;
+    left: -3%;
+    color:#555;
+	display:none;
+}
+
+.no-city-left{
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: -25%;
+    right: -5%;
+    color:#555;
+	display:none;
+}
+
+.ware{
+	pointer-events:none !IMPORTANT; 
+}
+
+.div-city-left{
+  	margin-left: -109px !important;
+    margin-top: -36px !important;
+}
+
+.value-city-green{
+    background: #9f86ff;
+}
+
+.value-city-gray{
+    background: #555555;
+}
+
+/**************  ???  ******************/
+
+.frame {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.frame input {
+  display: none;
+}
+
+.frame label {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  background: #FFF;
+  transition: all 0.3s ease-in-out;
+  font-size: 9pt;
+  color: #F62459;
+  font-smoothing: antialiased;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.frame4K label {
+  width: 51px;
+  height: 51px;
+  line-height: 51px;
+  font-size: 15pt;
+}
+
+.frame label.radio {
+  border-radius: 100%;
+}
+
+.frame label.check {
+  border-radius: 5px;
+}
+
+.frame label .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-trans: scale(0);
+          trans: scale(0);
+  transition: all 0.3s ease-in-out;
+  line-height: 30px;
+  text-align: center;
+}
+.frame input:checked + label {
+  background: shade(#F62459, 15%);
+  background-color: #F62459;
+  color: #FFF;
+}
+
+/**************  ??  ******************/
+
+.control-markes{
+  display: inline-block;
+  width: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/**************  BUBBLES  ******************/
+
+.wareBubble{
+	display: none;
+}
+
+.waresize-left-360{
+    width: 100px;
+	position: absolute;
+	bottom: -46px;
+	right:-44px;
+    opacity: 0.7;
+}
+
+.waresize-right-360{
+    width: 100px;
+	position: absolute;
+	bottom: -46px;
+	left:-44px;
+    opacity: 0.7;
+}
+
+.waresize-right-200{
+    width: 60px;/*74px;*/
+	position: absolute;
+	bottom: -33px;
+    left: -34px;
+    opacity: 0.7;
+}
+
+.waresize-left-200{
+    width: 60px;/*74px;*/
+	position: absolute;
+	bottom: -33px;
+    right: -34px;
+    opacity: 0.7;
+}
+
+.waresize-left-100{
+    width: 30px;/*52px;*/
+	position: absolute;
+	bottom: -22px;
+	right:-22px;
+    opacity: 0.7;
+}
+
+.waresize-right-100{
+    width: 30px;/*52px;*/
+	position: absolute;
+	bottom: -22px;
+	left:-22px;
+    opacity: 0.7;
+}
+
+.waresize-right-50{
+    width: 13px;/*37px;*/
+	position: absolute;
+	bottom: -14px;
+	left: -15px;
+    opacity: 0.7;
+}
+
+.waresize-left-50{
+    width: 13px;/*37px;*/
+	position: absolute;
+	bottom: -14px;
+	right:-15px;
+    opacity: 0.7;
+}
+
+/**************  LINKS  ******************/
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/**************  MAP HEADER  ******************/
+
+.mapTitle, .mapTitle2, .mapTitle3, .mapTitle4, .mapTitle5{
+	color: #ffc107;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+	padding: 15px;
+    margin: 13px;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 3px 14px rgba(255,255,255,0.4);
+    border-radius: 20px;	
+}

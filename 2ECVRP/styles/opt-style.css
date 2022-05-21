@@ -1,0 +1,183 @@
+/*********  ARVORE DE DECISAO  ***********/
+.orgOBJ td{
+	height: 16px;
+	text-align: center;
+}
+
+.orgOBJ {
+	margin-top:10px;
+}
+
+.orgOBJTEXT{
+	border-radius: 3px;
+	background-color: #1997c6;
+	vertical-align: baseline;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0;
+    background: #d3d3d3;
+    outline: none;
+    top: -13px;
+    position: relative;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 25px;
+	border-radius: 3px;
+    background: #ff9933;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #ff9933;
+    cursor: pointer;
+}
+
+/****************  GRAFICOS  *****************/
+hr {
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #434857;
+	margin-top: 0;
+}
+
+.box-pieChart{
+    float:left;
+    margin:0 10px;
+} 
+
+.box-pieChartFHD{
+	display:none;
+}
+
+.status {
+    width:200px;
+    border:1px solid #ff9933;
+    position:relative;
+	margin-bottom: -8px;
+	margin-top: -8px;
+}
+
+.barStatus {
+    height:10px;
+    background: #9F86FF ;
+    position:relative;
+	margin-top: -15px;
+	width: 50px;
+	margin-bottom: 8px;
+}
+
+.marcadorFav{
+	height: 0;
+	width: 0;
+	border: 8px solid transparent;
+	border-bottom: 8px solid #ffff00 ;
+}
+
+.marcadorTHIS{
+	height: 0;
+	width: 0;
+	border: 8px solid transparent;
+	border-top: 8px solid #9F86FF ;
+}
+
+.label-caption{
+    font-size: 15px;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 0px;
+    bottom: 20px;
+}
+
+/*****************  BOTOES  ******************/
+.clickOptimize{
+    width: 172px;
+    height: 59px;
+    padding-top: 20px;
+    text-align: center;
+    background: #9F86FF;
+    border-radius: 3px;
+    margin: 107px 248px;
+	cursor: pointer;
+}
+
+/***********  LISTA DE CANDIDATOS  ************/
+.listWare{
+	border-radius: 3px;
+	border:1px solid #9f86ff;
+	color: #fff;
+	margin: 1%;
+    margin-right: 5%;
+	padding:2%;
+	clear: both;
+	height: 44px;
+	background-color: #000;
+	position: sticky;
+}
+
+.listWare{
+	cursor: pointer;
+}
+
+.listWareActive:hover span{
+	display: block;
+}
+
+.listWareActive:hover{
+	width: 320px; /*90%;*/
+	z-index: 999;
+}
+
+.favorito{
+	color: #ffff00 !important;
+    position: relative;
+    left: 50px;
+    bottom: 4px;
+	font-size: 100% !important;
+}
+
+.cityNames{
+	float: right;
+	color: #9f86ff;
+	font-size: 120%;
+	margin-top: -2px;
+}
+
+.noSelect{
+	display:none;
+	color: #fff;
+}
+
+.noSelectLock{
+	display:none !important;
+}
+
+/**********  TABELA DE RESULTADOS  ***********/
+#tableSce{
+	font-size: 2rem;
+	text-align: center;
+}
+
+.table-cost td{
+    margin:0;
+    padding: 0;
+}
+  
+.table-cost img{
+    margin-top: 17px;
+    height:200px;
+}
